@@ -1,9 +1,5 @@
-import csv
-import re
-import os
-import glob
-import argparse
-filepath = r'C:\Users\dell'
+import csv, re, os, glob, argparse
+
 def parse_log_file(filepath):
     logs = []
     regex_pattern = r'(\d{1,2}/\d{1,2}\s\d{1,2}:\d{2}:\d{2})\s+(\w+)\s*:\s*(.*)'
