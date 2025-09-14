@@ -1,4 +1,4 @@
-# Log Parsing Tool
+# Log File Parsing Tool
 
 ## What's That?
 A Python script that parses `.log` and `.txt` files in a given directory and exports the results into a CSV file.  
@@ -17,8 +17,8 @@ This makes it easier to investigate logs with tools like Excel or SIEMs.
 ## Usage
 
 ### Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/codedByJana/LogFileParsingTool.git
+cd LogFileParsingTool
 
 ### Run The Script 
 `python logParsingTool.py <directory-path>`
@@ -26,10 +26,10 @@ cd your-repo-name
 `python logParsingTool.py "C:\Users\dell\logs"`
 
 #### Example Log
-`
-06/12 14:23:45 INFO: User logged in from 192.168.1.1 status: success \n
+
+06/12 14:23:45 INFO: User logged in from 192.168.1.1 status: success <br> 
 06/12 14:25:10 ERROR: Connection failed from 10.0.0.5 status: failed
-`
+
 #### CSV Output
 |timestamp	|ip	| status|
 |--------|--------|--------|
@@ -37,7 +37,7 @@ cd your-repo-name
 |06/12 14:25:10	| 10.0.0.5 | failed
 
 
-#### Requirements
+##### Requirements
 Python 3.x
 
 ##### Standard libraries: os, glob, re, csv, argparse
