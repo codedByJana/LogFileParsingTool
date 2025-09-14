@@ -33,10 +33,10 @@ def parse_log_file(filepath):
         args = parser.parse_args()
         print(f"Folder path received: {args.directory}")
     
-    # Collect all .txt and .log files in the directory
     log_files = glob.glob(os.path.join(args.directory, "*.txt")) + glob.glob(os.path.join(args.directory, "*.log"))
     if not log_files:
         print("No log files found in the specified directory.")
         exit(0)
     for filepath in log_files:
+
             parse_log_file(filepath)
